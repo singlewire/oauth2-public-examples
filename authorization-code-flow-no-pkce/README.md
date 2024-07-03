@@ -6,7 +6,7 @@ At a high level, we will need to do three things to get this code running:
 
 - Configure a redirect endpoint
 - Configure a third-party application in the Administrative Console
-- Enter the third-party application credentials into the `.env` file
+- Copy `.env_template` to `.env` and enter the third-party application credentials into the `.env` file
 - Build and run the application
 
 ### Configure a redirect endpoint
@@ -30,7 +30,7 @@ Configure your public endpoint (something like _myname_.ngrok.io) so that it poi
 
 ### Populating the `.env` file with the App credentials
 
-In the `.env` file, replace the `CLIENT_ID` field with the Client ID given in the Credentials tab. Do the same for the `CLIENT_SECRET` field.
+Copy the `.env_template` to a file called `.env`, then update the `.env` file's `CLIENT_ID` field with the Client ID given in the Application's Credentials tab of the Administrative Interface. Do the same for the `CLIENT_SECRET` field (don't modify the `.env_template`).
 
 ### Building and Running the App
 
